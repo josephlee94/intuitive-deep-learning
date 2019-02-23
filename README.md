@@ -1,4 +1,4 @@
-# intuitive-deep-learning
+# Intuitive Deep Learning
 
 A beginner-friendly tutorial to introduce Deep Learning concepts in an intuitive way!
 
