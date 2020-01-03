@@ -1,0 +1,29 @@
+<!doctype html> <html> <head>
+    <title>Your Prediction!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> </head> <body style="background-color:black"> <div id="maintext" 
+style="position:absolute; margin:auto; width:700px; height:300px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
+  <h1 class="text-light mb-5"> Your Prediction </h1>
+  <p class="text-light"> My algorithm gave this prediction: </p>
+  <table class="table-bordered text-light" style="width:100%">
+  <tr>
+    <th>Rank</th>
+    <th>Class</th>
+    <th>Probability</th>
+  </tr>
+  <tr>
+    <td>Most Likely:</td>
+    <td>{{ predictions.class1 }}</td>
+    <td>{{ predictions.prob1 }}</td>
+  </tr>
+  <tr>
+    <td>2nd Most Likely:</td>
+    <td>{{ predictions.class2 }}</td> <td>{{ predictions.prob2 }}</td> </tr> <tr>
+    <td>3rd Most Likely:</td>
+    <td>{{ predictions.class3 }}</td>
+    <td>{{ predictions.prob3 }}</td>
+  </tr>
+  </table> <a href="{{ url_for('main_page') }}"><button class="button mt-3">Try again?</button></a>
+</div>
+</body>
+</html>
